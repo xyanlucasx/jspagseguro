@@ -9,11 +9,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["pagseguro", "transparente", "checkout", "backend", "split", "pagamento", "simples"],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
     "xml2js": "^0.4.23"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyanlucasx/jspagseguro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyanlucasx/jspagseguro/issues"
+  },
+  "homepage": "https://github.com/xyanlucasx/jspagseguro#readme"
 }
