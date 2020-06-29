@@ -8,14 +8,14 @@ O exemplo abaixo usa o ambiente sandbox para testes, para usar o ambiente de pro
 
 ```js
 
-  const credentials = {
+const credentials = {
     email: seuemail@gmail.com,
     token: seuTokensdfjdfg,
   }
 
-  const simplePurchase = true;
+const simplePurchase = true;
 
-  const cardData = {
+const cardData = {
     cardNumber: "4111111111111111",
     cardBrand: "mastercard",
     cardCvv: "123",
@@ -23,9 +23,9 @@ O exemplo abaixo usa o ambiente sandbox para testes, para usar o ambiente de pro
     cardExpirationYear: "2027",
   };
 
-  const env = "sandbox";
+const env = "sandbox";
 
-  const amount = "3.00"
+const amount = "3.00"
 
 const buyDetails = {
   "payment.mode": "default",
@@ -54,7 +54,7 @@ const buyDetails = {
   "billingAddress.city": "Fortaleza",
   "billingAddress.state": "CE",
   "billingAddress.country": "BRA",
-    //Os campos abaixo só são necessários 
+    //Os campos abaixo só são necessários
    //para pagamento Split
   //"primaryReceiver.email": "primeiro@live.com",
  //"receiver[1].email": "receiver@hotmail.com",
@@ -69,13 +69,15 @@ const {pagseguroComposer,
 
 const exemplo = async (credentials, cardData, amount, buyDetails,simplePurchase) =>{
 
-  return await pagseguroComposer(
+  const transac = await pagseguroComposer(
     { credentials, cardData, amount, buyDetails, env, simplePurchase },
     createSession,
     createTokenCard,
     generateSenderHash,
     paymentCreditCard
   );
+
+  console.log(transac)
 }
 
 exemplo(credentials,
@@ -86,4 +88,4 @@ exemplo(credentials,
         simplePurchse)
 ```
 
-A função irá retornar as informações da transação criada ou o erro, caso não tenha obtido sucesso na criação. O erro informa o que foi enviado de errado.
+A função irá mostrar na tela as informações da transação criada ou o erro, caso não tenha obtido sucesso na criação. O erro informa o que foi enviado de errado.
