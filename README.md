@@ -8,6 +8,12 @@ O exemplo abaixo usa o ambiente sandbox para testes, para usar o ambiente de pro
 
 ```js
 
+const {pagseguroComposer,
+      createSession,
+      createTokenCard,
+      generateSenderHash,
+      paymentCreditCard} = require("jspagseguro")
+
 const credentials = {
     email: seuemail@gmail.com,
     token: seuTokensdfjdfg,
@@ -60,12 +66,6 @@ const buyDetails = {
  //"receiver[1].email": "receiver@hotmail.com",
 //"receiver[1].split.amount": "1.00",
 };
-
-const {pagseguroComposer,
-      createSession,
-      createTokenCard,
-      generateSenderHash,
-      paymentCreditCard} = require("jspagseguro")
 
 const exemplo = async (credentials, cardData, amount, buyDetails,simplePurchase) =>{
 
