@@ -15,8 +15,8 @@ const {pagseguroComposer,
       paymentCreditCard} = require("jspagseguro")
 
 const credentials = {
-    email: seuemail@gmail.com,
-    token: seuTokensdfjdfg,
+    email: "seuemail@gmail.com",
+    token: "seuTokensdfjdfg",
   }
 
 const simplePurchase = true;
