@@ -1,6 +1,6 @@
 {
   "name": "jspagseguro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A documentação ainda será criada.",
   "main": "index.js",
   "directories": {
@@ -9,11 +9,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["pagseguro", "transparente", "checkout", "backend", "split", "pagamento", "simples"],
+  "keywords": [
+    "pagseguro",
+    "transparente",
+    "checkout",
+    "backend",
+    "split",
+    "pagamento",
+    "simples"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {},
